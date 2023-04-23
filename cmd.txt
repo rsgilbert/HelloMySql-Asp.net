@@ -1,0 +1,2 @@
+// install MySql.Data
+dotnet add package MySql.Data

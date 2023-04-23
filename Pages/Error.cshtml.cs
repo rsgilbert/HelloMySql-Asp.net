@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.Diagnostics;
+using HelloMySql.Models;
 
 namespace HelloMySql.Pages
 {
@@ -23,5 +24,9 @@ namespace HelloMySql.Pages
         {
             RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier;
         }
+
+ 
     }
+
+
 }
