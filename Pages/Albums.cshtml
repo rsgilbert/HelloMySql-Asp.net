@@ -1,0 +1,44 @@
+@page
+@model AlbumsModel
+
+@{
+    ViewData["Title"] = "Albums";
+}
+<div>
+    <h1>Albums</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Artist Name</th>
+                <th>Price</th>
+                <th>Genre</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var album in Model.albums)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayTextFor(item => album.Id)
+                    </td>
+                    <td>
+                        @Html.DisplayTextFor(item => album.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayTextFor(item => album.ArtistName)
+                    </td>
+                    <td>
+                        @Html.DisplayTextFor(item => album.Price)
+                    </td>
+                    <td>
+                        @Html.DisplayTextFor(item => album.Genre)
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+
+</div>
